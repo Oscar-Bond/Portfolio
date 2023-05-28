@@ -4,7 +4,7 @@
 <head>
     <title>Website Title</title>
     <style>
-        /* CSS styles for the navbar, hero image, and footer go here */
+        /* CSS styles for the navbar, hero image, footer, skills, and work sections go here */
         .navigation {
             background-color: #f2f2f2;
             padding: 10px;
@@ -59,19 +59,54 @@
             border-radius: 4px;
         }
 
-        footer {
-            background-color: #f2f2f2;
+        .mySkills {
             padding: 20px;
         }
 
-        footer ul {
-            list-style-type: none;
-            padding: 0;
+        .flexContainer {
+            display: flex;
+            justify-content: space-between;
         }
 
-        footer ul li {
-            display: inline-block;
-            margin-right: 10px;
+        .skillBox {
+            flex-basis: 30%;
+            text-align: center;
+            padding: 20px;
+            margin: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .skillBox img {
+            width: 100px;
+            height: 100px;
+        }
+
+        .myWork {
+            padding: 20px;
+        }
+
+        .workGrid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 20px;
+        }
+
+        .workItem {
+            text-align: center;
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 4px;
+        }
+
+        .workItem img {
+            width: 200px;
+            height: auto;
+        }
+
+        .viewAllProjects {
+            text-align: center;
+            margin-top: 20px;
         }
     </style>
 </head>
@@ -100,6 +135,52 @@
                 <p>About yourself!</p>
                 <button>Download Resume</button>
             </div>
+        </section>
+
+        <!-- My Skills -->
+        <section class="mySkills">
+            <h1>My UX Skills</h1>
+            <div class="flexContainer">
+                <div class="skillBox">
+                    <img src="path_to_skill_icon.png" alt="Skill Icon">
+                    <h3>Skill 1</h3>
+                    <p>Description of skill 1.</p>
+                </div>
+                <div class="skillBox">
+                    <img src="path_to_skill_icon.png" alt="Skill Icon">
+                    <h3>Skill 2</h3>
+                    <p>Description of skill 2.</p>
+                </div>
+                <div class="skillBox">
+                    <img src="path_to_skill_icon.png" alt="Skill Icon">
+                    <h3>Skill 3</h3>
+                    <p>Description of skill 3.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- My Work -->
+        <section class="myWork">
+            <h1>My Work</h1>
+            <div class="workGrid">
+                <div class="workItem">
+                    <img src="path_to_project_image.png" alt="Project Image">
+                </div>
+                <div class="workItem">
+                    <h4>Project 1</h4>
+                    <p>Description of Project 1.</p>
+                    <button>View Project</button>
+                </div>
+                <div class="workItem">
+                    <img src="path_to_project_image.png" alt="Project Image">
+                </div>
+                <div class="workItem">
+                    <h4>Project 2</h4>
+                    <p>Description of Project 2.</p>
+                    <button>View Project</button>
+                </div>
+            </div>
+            <h3 class="viewAllProjects">View all projects.</h3>
         </section>
     </main>
 
